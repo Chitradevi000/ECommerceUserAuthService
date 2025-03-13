@@ -15,7 +15,7 @@ public class UserReponseDto {
     private String name;
     private String email;
     private List<RoleResponseDto> listOfRoles;
-
+    private String token;
     //im gonna write a mapper below
 
 
@@ -25,6 +25,7 @@ public class UserReponseDto {
         UserReponseDto userDto = new UserReponseDto();
         userDto.setEmail(user.getEmail());
         userDto.setName(user.getName());
+        userDto.setToken(user.getToken());
         userDto.setListOfRoles(new ArrayList<>());
         //how to convert the below loop into lambda
 //        for(Role role : user.getRoles()) {

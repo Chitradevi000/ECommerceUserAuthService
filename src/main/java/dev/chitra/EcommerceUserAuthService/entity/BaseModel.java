@@ -24,5 +24,5 @@ public abstract class BaseModel {
     private Instant createdAt;
     @UpdateTimestamp
     private Instant updatedAt;
-
+    private String token;
 }
